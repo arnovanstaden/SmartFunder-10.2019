@@ -1,0 +1,245 @@
+/* ---------------------------------------------------------
+TABLE OF CONTENT 
+
+    1. Imports
+    2. General Styles
+        2.1. General
+            • General Styles
+            • Variable Colours
+            • Button Styles
+            • Section Headings
+        2.2. Navigation
+        2. Footer
+    3. Home Page
+    4. About Page
+    5. Support Page
+    6. Client Page
+    7. Terms + Privacy Pages
+
+
+
+
+*/
+
+/* ---------------------------------------------
+    1. IMPORTS */
+
+@import "./fonts.css";
+
+
+/* ---------------------------------------------------------
+    2. GENERAL STYLES */
+
+/* 2.1. General */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Nunito;
+    font-size: 16px;
+}
+
+/* • Variable Colours */
+:root {
+    --light-blue: rgb(73, 143, 205);
+    --dark-grey: rgb(85, 90, 100);
+    --light-grey: rgba(153, 153, 153, 0.1);
+    --dark-blue: rgb(25, 35, 54);
+}
+
+/* • Section Headings */
+
+.section-heading {
+    padding: 2% 10%;
+    text-align: center;
+}
+
+.section-heading h1 {
+    color: var(--dark-blue);
+    font-weight: 600;
+    font-size: 2.2rem
+}
+
+.section-heading h4 {
+    color: var(--dark-grey);
+    font-size: 1.2rem;
+    padding: 1% 0;
+}
+
+
+/* Button Styles */
+
+.more-blue-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.more-blue-button a {
+    background-color: var(--light-blue);
+    padding: 6px 5%;
+    color: white;
+    font-weight: 400;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.more-blue-button a:hover {
+    background-color: var(--dark-blue);
+    transition: 0.4s;
+}
+
+
+/* 2.2. Navigation */
+
+nav {
+    background-color: white;
+    box-shadow: 0px 4px 5px rgba(25, 35, 54, 0.2);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.navbar-logo {
+    width: 200px;
+    padding-left: 2%;
+}
+
+.navbar-item {
+    padding: 0 15px;
+}
+
+.navbar-item a {
+    color: var(--dark-grey);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+.navbar-item a:hover {
+    text-decoration: none;
+    color: var(--dark-blue);
+    transition: 0.4s;
+    opacity: 1;
+}
+
+.navbar-line {
+    width: 100%;
+    background-color: var(--dark-grey);
+    width: 0.5px;
+    padding: 0;
+    margin: 0 30px 0 10px;
+}
+
+.login-link {
+    background-color: var(--light-blue);
+    border-radius: 5px;
+    padding: 0;
+}
+
+.login-link a {
+    color: white !important;
+    font-weight: 600;
+    opacity: 1;
+    padding: 0 15px;
+}
+
+.login-link:hover {
+    background-color: var(--dark-blue);
+    transition: 0.4s;
+}
+
+
+
+
+
+
+/* Buttons */
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: var(--light-grey);
+}
+
+.footer-logo {
+    margin: auto;
+    display: block;
+    width: 15vw;
+}
+
+.footer-nav {
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav a {
+    margin: 0 2%;
+    padding: 1%;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--dark-grey);
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.footer-nav a:hover {
+    color: var(--dark-blue);
+    transition: 0.4s;
+}
+
+.footer-line {
+    width: 75%;
+    margin: 10px auto;
+    height: 0.5px;
+    background-color: var(--light-grey);
+}
+
+.footer-copy {
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 0;
+    letter-spacing: 0.5px;
+    ;
+}
+
+
+.about-body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.about-body img {
+    width: 400px;
+    margin: auto;
+    display: block;
+}
+
+
+
+
+
+/* --------------------------------------------------------- 
+
+6. SUPPORT PAGE   
+
+
+------------------------------------------------- */
+
+.client-grid {
+    padding: 2% 5%;
+}
+
+.client-grid img {
+    width: 100%;
+    padding: 10px 0;
+}
