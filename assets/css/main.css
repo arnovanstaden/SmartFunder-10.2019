@@ -1,5 +1,5 @@
 /* ---------------------------------------------------------
-TABLE OF CONTENT 
+TABLE OF CONTENTS
 
     1. Imports
     2. General Styles
@@ -8,18 +8,16 @@ TABLE OF CONTENT
             • Variable Colours
             • Button Styles
             • Section Headings
+            • Scroll Bars
         2.2. Navigation
-        2. Footer
+        2.3. Footer
     3. Home Page
     4. About Page
     5. Support Page
     6. Client Page
     7. Terms + Privacy Pages
 
-
-
-
-*/
+---------------------------------------- */
 
 /* ---------------------------------------------
     1. IMPORTS */
@@ -40,6 +38,7 @@ body {
     margin: 0;
     font-family: Nunito;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 /* • Variable Colours */
@@ -80,15 +79,39 @@ body {
 .more-blue-button a {
     background-color: var(--light-blue);
     padding: 6px 5%;
-    color: white;
+    color: white !important;
     font-weight: 400;
     border-radius: 5px;
     text-decoration: none;
+    cursor: pointer !important;
 }
 
 .more-blue-button a:hover {
     background-color: var(--dark-blue);
     transition: 0.4s;
+}
+
+
+/* Custom Scrollbars */
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--light-blue);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-blue);
 }
 
 
@@ -154,14 +177,7 @@ nav {
 }
 
 
-
-
-
-
-/* Buttons */
-
-
-/* Footer */
+/* 2.3. Footer */
 
 footer {
     width: 100%;
@@ -230,16 +246,38 @@ footer {
 
 /* --------------------------------------------------------- 
 
-6. SUPPORT PAGE   
+6. CLIENT PAGE   
 
 
 ------------------------------------------------- */
 
+.client-landing-section img {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.client-grid-section {
+    padding: 2% 0 7.5% 0;
+}
+
 .client-grid {
-    padding: 2% 5%;
+    padding: 0 10%;
+}
+
+.client-grid .row>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
 }
 
 .client-grid img {
     width: 100%;
     padding: 10px 0;
+    vertical-align: middle;
+}
+
+.extra-client-grid {
+    display: none;
 }
