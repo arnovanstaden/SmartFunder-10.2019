@@ -38,24 +38,186 @@
 
 <body>
 
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-expand-sm">
+        <a class="navbar-brand" href="./index.html"></a>
+        <img class="navbar-logo" src="./assets/images/logos/SmartFunder-Logo-Blue.png" alt="">
+        <div class="navbar-collapse collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="navbar-item">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="./about.html">About</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="./Clients.html">Clients</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="./support.html" class="active-page">Support</a>
+                </li>
+                <li class="navbar-item  navbar-line"></li>
+                <li class="navbar-item login-link">
+                    <a href="??">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- Support Landing Section -->
+    <section class="support-landing-section">
+        <div class="row">
+            <div class="col-sm-6 col-12 support-landing-text-container">
+                <h1>Have a burning question or
+                    just want to say hello?</h1>
+            </div>
+
+            <div class="col-sm-6 col-12 support-landing-image-container">
+                <img src="./assets/images/illustrations/Support/Support-Landing-Section.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="support-faq-section">
+
+        <!-- Section Heading -->
+        <div class="container-fluid section-heading">
+            <h1>Have questions about SmartFunder?</h1>
+        </div>
+
+        <!-- FAQ Grid -->
+        <div class="container-fluid faq-grid">
+
+            <!-- Tab Menu -->
+            <div class="faq-button-container">
+                <button class="faq-tab active-faq-tab">Employee</button>
+                <button class="faq-tab">Employer</button>
+            </div>
+
+            <!-- Employees FAQ's -->
+            <div class="faq-container faq-employees">
+                <div class="row">
+                    <div class="col-sm-4 faq-grid-categories">
+                        <ul>
+                            <li class="faq-active-category">
+                                <img src="./assets/images/icons/SF-Favicon.png" alt="">
+                                SmartFunder Benefit
+                            </li>
+                            <li>
+                                <img src="./assets/images/icons/SF-Favicon.png" alt="">
+                                Benefit Amounts & Payments
+                            </li>
+                            <li>
+                                <img src="./assets/images/icons/SF-Favicon.png" alt="">
+                                Educational Institutions
+                            </li>
+                            <li>
+                                <img src="./assets/images/icons/SF-Favicon.png" alt="">
+                                Duration of Benefit
+                            </li>
+                            <li>
+                                <img src="./assets/images/icons/SF-Favicon.png" alt="">
+                                Information Required
+                            </li>
+                            <li>
+                                <img src="./assets/images/icons/SF-Favicon.png" alt="">
+                                Practical Implications & Savings
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-8 faq-grid-questions">
+
+                        <button class="accordion">What is the SmartFunder benefit?</button>
+                        <div class="panel">
+                            <p>If you currently pay school or study fees for your children or any family members who are
+                                in school (Grade R – 12) or in college or university (NQF level 1 – 10 - see video link
+                                below), we can help you save every month by moving this from a post-tax to a pre-tax
+                                expense, by utilising this amazing new company benefit.
+                                Please watch this 90 second video for more information:
+                                https://www.smartfunder.co.za/about
+                            </p>
+                        </div>
+
+                        <button class="accordion">Do I qualify for this benefit?</button>
+                        <div class="panel">
+                            <p>All employees that earned R600 000 or less in total remuneration in the previous tax
+                                year, that pay school or study fees for any of their children or relatives within
+                                the 3rd degree of consanguinity, can benefit from this.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="support-contact-section">
+        <div class="row">
+            <div class="col-md-6 support-contact-form">
+                <form method="post" name="myemailform" action="./assets/mail/form-to-email.php" class="contact-form" id="support-company-form">
+                    <div>
+                        <input type="text" name="name" placeholder="Company Name" required>
+                    </div>
+                    <div>
+                        <input type="text" name="employeeNumber" placeholder="Number Of Employees" required>
+                    </div>
+                    <div>
+                        <input type="email" name="email" placeholder="Company Representative Email Address" required>
+                    </div>
+                    <div>
+                        <input type="number" name="number" placeholder="Company Representative Phone Number" required>
+                    </div>
+                    <div>
+                        <textarea name="message" rows="3" placeholder="How can SmartFunder Help?" required></textarea>
+                    </div>
+                    <input type="submit" name='submit' value="Send Message" class="submit-button">
+            </div>
+            <div class="col-md-6 support-contact-details">
+                <h1>Want to get in touch?</h1>
+                <p>Give us a call, send an email, or fill in the contact
+                    form – we'll get back to you in a jiffy.</p>
+                <p>Call Us</p>
+                <a href="tel:+27 87 012 5325">+27 87 012 5325</a>
+                <p>Email Us</p>
+                <a
+                    href="mailto:info@smartfunder.co.za?subject=Hi%20SmartFunder!%20I%20need%20some%20help.">info@smartfunder.co.za</a>
+                <div>
+                    <a href="https://za.linkedin.com/company/smartfunder"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Contact Section Image & Footer Line -->
+        <img src="./assets/images/illustrations/Support/Contact-Form.png" class="support-contact-image" alt="Boy holding smartphone contacting smartfunder">
+        <div class="footer-seperation-line"></div>
+    </section>
+
 
     <!-- Footer -->
     <footer class="container-fluid">
         <div class="footer-nav">
-            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
             <a href="./about.html">Careers</a>
             <a href="./support.html">Support</a>
             <a href="./support.html">FAQ</a>
             <a href="./terms.html">Terms</a>
             <a href="./privacy.html">Privacy</a>
         </div>
-        <img class="footer-logo" src="./assets/images/logos/SmartFunder-Logo-White.png" alt="SmartFunder Footer Logo">
+        <img class="footer-logo" src="./assets/images/logos/SmartFunder-Logo-Blue.png" alt="SmartFunder Footer Logo">
         <div class="footer-line"></div>
         <p class="footer-copy">Copyright © 2019 SmartFunder. All rights reserved.</p>
     </footer>
 
     <!-- Scripts -->
-    <script src="./vendors/jquery/jquery-3.3.1.min.js"></script>
+    <script src="./vendors/jquery/jquery-3.4.1.min.js"></script>
     <script src="./vendors/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
 

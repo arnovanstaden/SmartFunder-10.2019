@@ -21,7 +21,7 @@ if(IsInjected($visitor_email))
     exit;
 }
 
-$email_from = 'info@webdacity.co.za';//<== update the email address
+$email_from = 'info@smartfunder.co.za';//<== update the email address
 $email_subject = "Website Contact Form Submission";
 $email_body = "You have received a new message:\n\n".
 
@@ -29,7 +29,7 @@ $email_body = "You have received a new message:\n\n".
     "Message:\n $message \n\n".
     "Email:\n $visitor_email";
     
-$to = "info@webdacity.co.za";//<== update the email address
+$to = "info@smartfunder.co.za";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!

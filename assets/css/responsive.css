@@ -1,0 +1,29 @@
+/* ---------------------------------------------------------
+TABLE OF CONTENTS
+
+    1. Imports
+    2. General Styles
+        2.1. General
+        2.2. Navigation
+        2.3. Footer
+    3. Home Page
+    4. About Page
+    5. Support Page
+    6. Client Page
+    7. Terms + Privacy Pages
+
+---------------------------------------- */
+
+
+/* ---------------------------------------------------------
+    6. Client Page STYLES */
+
+    @media screen and (max-width:576px) {
+        .client-grid {
+            padding-top: 0% 15%;
+        }
+
+        .client-grid img {
+            width: 80%;
+        }
+    }
