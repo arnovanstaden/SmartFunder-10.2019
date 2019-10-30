@@ -94,18 +94,20 @@
 
             <!-- Tab Menu -->
             <div class="faq-button-container">
-                <button class="faq-tab active-faq-tab">Employee</button>
-                <button class="faq-tab">Employer</button>
+                <button class="faq-tab active-faq-tab" id="employee-tab">Employee</button>
+                <button class="faq-tab" id="employer-tab">Employer</button>
             </div>
 
             <!-- Employees FAQ's -->
             <div class="faq-container faq-employees">
                 <div class="row">
+
+                    <!-- FAQ Grid Questions -->
                     <div class="col-sm-4 faq-grid-categories">
                         <ul>
                             <li class="faq-active-category">
-                                <img src="./assets/images/icons/SF-Favicon.png" alt="">
-                                SmartFunder Benefit
+                                <img src="./assets/images/icons/SF-Favicon.png" alt="SF Logo">
+                                Test
                             </li>
                             <li>
                                 <img src="./assets/images/icons/SF-Favicon.png" alt="">
@@ -129,31 +131,449 @@
                             </li>
                         </ul>
                     </div>
+
+                    <!-- FAQ Grid Questions -->
                     <div class="col-sm-8 faq-grid-questions">
 
-                        <button class="accordion">What is the SmartFunder benefit?</button>
-                        <div class="panel">
-                            <p>If you currently pay school or study fees for your children or any family members who are
-                                in school (Grade R – 12) or in college or university (NQF level 1 – 10 - see video link
-                                below), we can help you save every month by moving this from a post-tax to a pre-tax
-                                expense, by utilising this amazing new company benefit.
-                                Please watch this 90 second video for more information:
-                                https://www.smartfunder.co.za/about
-                            </p>
+                        <div class="faq-questions-list faq-active-questions">
+
+                            <button class="accordion">What is the SmartFunder benefit?</button>
+                            <div class="panel">
+                                <p>If you currently pay school or study fees for your children or any family members who
+                                    are
+                                    in school (Grade R – 12) or in college or university (NQF level 1 – 10 - see video
+                                    link
+                                    below), we can help you save every month by moving this from a post-tax to a pre-tax
+                                    expense, by utilising this amazing new company benefit.
+                                    Please watch this 90 second video for more information:
+                                    https://www.smartfunder.co.za/about
+                                </p>
+                            </div>
+
+                            <button class="accordion">Do I qualify for this benefit?</button>
+                            <div class="panel">
+                                <p>All employees that earned R600 000 or less in total remuneration in the previous tax
+                                    year, that pay school or study fees for any of their children or relatives within
+                                    the 3rd degree of consanguinity, can benefit from this.
+                                </p>
+                            </div>
+
+                            <button class="accordion">Is this an additional bursary on top of my salary?</button>
+                            <div class="panel">
+                                <p>This is not additional funding, but a more tax efficient way of paying your existing
+                                    school- or study fees for your children or relatives.
+                                </p>
+                            </div>
+
+                            <button class="accordion">How do I know if my relative is within the 3rd degree of
+                                consanguinity?</button>
+                            <div class="panel">
+                                <p>The graph below indicates all qualifying relatives that fall within the 3rd degree of
+                                    consanguinity:
+                                </p>
+                                <img src="./assets/images/faq-images/faq1.png" alt="" class="faq-panel-image">
+                            </div>
+
+                            <button class="accordion">Can I pay for my own studies?</button>
+                            <div class="panel">
+                                <p>No, unfortunately, only educational expenses that you pay for your children or
+                                    relatives qualify.
+                                </p>
+                            </div>
+
                         </div>
 
-                        <button class="accordion">Do I qualify for this benefit?</button>
-                        <div class="panel">
-                            <p>All employees that earned R600 000 or less in total remuneration in the previous tax
-                                year, that pay school or study fees for any of their children or relatives within
-                                the 3rd degree of consanguinity, can benefit from this.
-                            </p>
+                        <div class="faq-questions-list">
+
+                            <button class="accordion">What portion of my salary can I restructure as a
+                                benefit?</button>
+                            <div class="panel">
+                                <p>Your total educational fees can be restructured. However, the tax-exempt portion is
+                                    capped at R20 000 annually per child or relative for grades R to 12 or an NQF level
+                                    1 - 4 qualification, and R60 000 annually per child or relative for a tertiary NQF
+                                    level 5 - 10 qualification. Everything above the tax-exempt portion will be treated
+                                    as a taxable benefit. Please refer to FAQ 9 below for more information.
+                                </p>
+                            </div>
+
+                            <button class="accordion"> Is the qualifying benefit amount per relative or per employee?
+                            </button>
+                            <div class="panel">
+                                <p> The exemption is per relative of the employee. For example, if you have 2 children
+                                    at school, you can restructure up to R40 000 (R20 000 x 2) per annum as a tax-exempt
+                                    benefit, paid in monthly instalments.
+                                </p>
+                            </div>
+
+                            <button class="accordion"> How are payments made? </button>
+                            <div class="panel"> When registering, you specify the amount of school fees for the year and
+                                the applicable payment terms. The total amount specified will be divided in equal
+                                monthly instalments, based on the payment term selected, which will be deducted from
+                                payroll monthly and paid to the educational institution at month end. A notice of
+                                payment will be sent to both you and the educational institution after each payment.
+                                <p>
+                                </p>
+                            </div>
+
+                            <button class="accordion"> How will I know that my monthly school fees were paid? </button>
+                            <div class="panel">
+                                <p> When your employer makes the monthly school fees payment to the educational
+                                    institution, you will receive an email or SMS payment notification with all the
+                                    relevant information.
+                                </p>
+                            </div>
+
+                            <button class="accordion"> What if my school fees are less than the tax-exempt cap?
+                            </button>
+                            <div class="panel">
+                                <p> You choose your own amount to be deducted, so you don’t have to utilise the maximum
+                                    allowable tax-exempt benefit amount. When you register, you will specify the benefit
+                                    amount. This will be equal to your total outstanding educational fees until the end
+                                    of the calendar year.
+                                </p>
+                            </div>
+
+                            <button class="accordion"> What if the educational fees per relative are more than the
+                                tax-exempt cap? </button>
+                            <div class="panel">
+                                <p> Your total educational fees can be restructured as a benefit. However, the
+                                    tax-exempt portion is capped at R20 000 annually per relative for grades R to 12 or
+                                    an NQF level 1 - 4 qualification and R60 000 annually per relative for a tertiary
+                                    NQF level 5 - 10 qualification.
+                                    If the educational expense exceeds the tax-exempt cap, you have the option to settle
+                                    the total expense through the SmartFunder platform or utilise only the tax-exempt
+                                    portion and personally settle the balance with the institution.
+                                    For example, if your school fees for a Grade 7 learner is R26 000 per year, you can
+                                    settle the full R26 000 (scenario 1) from your payroll using the SmartFunder
+                                    platform. Alternatively, you can choose to only utilise the non-taxable portion of
+                                    R20 000 and personally settle the remaining balance of R6 000 (scenario 2). The tax
+                                    saving will be the same in both scenarios:
+
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="faq-questions-list">
+
+                            <button class="accordion"> Can my relative study at any school or tertiary educational
+                                institution? </button>
+                            <div class="panel">
+                                <p> An educational institution qualifies if that institution has been established by or
+                                    registered under the laws of South Africa, for example the Department of Education,
+                                    the Higher Education Act, 1997, the Skills Development Act, 1998 or the National
+                                    Research Foundation Act, 1998. A foreign educational institution also qualifies if
+                                    the qualification obtained from that institution upon completion of such studies
+                                    would be recognised by the South African Qualifications Authority under the National
+                                    Qualifications Framework Act, 2008.
+                                    Most schools and tertiary educational institutions are pre-loaded onto the
+                                    SmartFunder platform. You can select the relevant institution when you register your
+                                    relative.
+
+                                </p>
+                            </div>
+
+                            <button class="accordion"> What if I can’t find the school on the SmartFunder platform drop
+                                down list? </button>
+                            <div class="panel">
+                                <p> Ensure that you select the correct province where the educational institution is
+                                    situated. Start your search with the actual name of the institution. For example,
+                                    when searching for “Florida High School”, start your search with “Florida”. When
+                                    searching for tertiary educational institutions, use the full name and not the
+                                    abbreviation. For example, start your search with “Pretoria” if you are searching
+                                    for the “University of Pretoria” or “South Africa” when you are searching for
+                                    “UNISA” (University of South Africa).
+                                    If the institution is not on our list, select the “Recommend an Educational
+                                    Institution” button and add the required details to enable SmartFunder to verify the
+                                    educational institution.
+
+
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="faq-questions-list">
+
+                            <button class="accordion"> What is the duration of the benefit? </button>
+                            <div class="panel">
+                                <p> If you register for January, you can choose between a 10- or 11-month payment term
+                                    for payments towards the school. The term will start from the end of January until
+                                    end of October or November. For tertiary education, we offer a 6-, 7-, 10- or
+                                    11-month payment term. The payment terms will be adjusted accordingly when
+                                    registering later in the year, taking into account the month of registration, and
+                                    the last instalment will always remain either October or November (depending on the
+                                    payment term selected). E.g. if you register in July and select November as the last
+                                    payment date, 5 instalments will be paid.
+                                </p>
+                            </div>
+
+                            <button class="accordion"> What happens if I resign? </button>
+                            <div class="panel">
+                                <p> If your new employer is part of the SmartFunder family, you can register under their
+                                    profile and continue with the benefit. If not, you will be disenrolled and you will
+                                    be held liable for the outstanding school fees.
+                                </p>
+                            </div>
+
+                            <button class="accordion"> Do I still qualify for early settlement discounts at schools when
+                                utilising this benefit? </button>
+                            <div class="panel">
+                                <p> No, as your school fees will now be paid in monthly instalments. However, in almost
+                                    all cases the tax saving through this benefit is significantly higher than the early
+                                    settlement discounts. Please contact your HR representative to find out exactly how
+                                    much more you will be saving.
+                                </p>
+                            </div>
+
+                            <button class="accordion"> When do I get the tax benefit? </button>
+                            <div class="panel">
+                                <p> From the first month of utlising this benefit as this is a monthly payroll
+                                    adjustment and you will see the benefit by way of a reduction in tax paid. This will
+                                    also reflect on your employer provided IRP5 at the end of the tax year.
+                                </p>
+                            </div>
+
+                            <button class="accordion"> Can I claim back educational fees that I already paid? </button>
+                            <div class="panel">
+                                <p> No. Only fees still outstanding at the time of registration qualify. The tax act
+                                    does not allow for reimbursements.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="faq-questions-list">
+
+                            <button class="accordion"> What information do I require to register? </button>
+                            <div class="panel">
+                                <p> 1. Name and surname of relative <br>
+                                    2. ID number of your relative <br>
+                                    3. Student number <br>
+                                    4. The balance of the school fees still payable to the educational institution for
+                                    the remainder of the year <br>
+                                    5. Payment reference number you use when making payments to the institution <br>
+                                    6. Code Name of institution (school) <br>
+                                    7. Banking details of the educational institution: <br>
+                                    • Account holder name <br>
+                                    • Account number <br>
+                                    • Bank Name <br>
+                                    • Type of account <br>
+                                    • Branch <br>
+
+
+
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="faq-questions-list">
+
+                            <button class="accordion"> Will this impact my salary and disposable income? </button>
+                            <div class="panel">
+                                <p> Your gross salary will remain unchanged. However, your educational expenses will now
+                                    be paid directly to the educational institution via a payroll deduction. Your net
+                                    salary will decrease as a result, but your educational expenses will already be
+                                    settled. Therefore, you’ll pay less income tax and your disposable income will
+                                    increase.
+                                </p>
+                            </div>
+
+                            <button class="accordion"> Does this benefit impact my company remuneration? </button>
+                            <div class="panel">
+                                <p> No. Your total remuneration will remain unchanged and will only be restructured in a
+                                    more tax-efficient way. Only the tax amount paid will change. Your payslip will be
+                                    updated to reflect the amount paid to the educational institution as a non-taxable
+                                    benefit. Your IRP5 will reflect the IRP5 code 3815 against the Grade R – 12 or NQF
+                                    level 1 - 4 expense and the IRP5 code 3821 against the NQF level 5 - 10 expense for
+                                    the non-taxable portion. If you have a taxable portion (see FAQ 9 above), you will
+                                    also see the IRP5 code 3809 against the taxable Grade R – 12 or NQF level 1 - 4
+                                    expense and IRP5 code 3820 against the taxable NQF level 5 - 10 expense for the
+                                    taxable portion.
+                                </p>
+                            </div>
+
+                            <button class="accordion"> How will this benefit reflect on my IRP5? </button>
+                            <div class="panel">
+                                <p> You can expect to see the relevant codes from the list below on your IRP5:
+                                </p>
+                            </div>
+
+                            <button class="accordion"> How much can I save using the benefit? </button>
+                            <div class="panel">
+                                <p> The below matrix indicates how much you can save utilising the School Fees Benefit
+                                    assuming you make use of the full benefit per child and have no other tax-deductible
+                                    expenses. These numbers are based on the March 2019 to February 2020 tax year.
+                                </p>
+                            </div>
+
                         </div>
 
                     </div>
                 </div>
-            </div>
-        </div>
+            </div> <!-- END Employees FAQ-->
+
+
+            <!-- Employers FAQ's -->
+            <div class="faq-container faq-employers">
+                <div class="row">
+
+                    <!-- FAQ Grid Questions -->
+                    <div class="col-sm-4 faq-grid-categories">
+                        <ul>
+                            <li class="faq-active-category">
+                                <img src="./assets/images/icons/SF-Favicon.png" alt="">
+                                Bursary Policy
+                            </li>
+                            <li>
+                                <img src="./assets/images/icons/SF-Favicon.png" alt="">
+                                School Payments
+                            </li>
+                            <li>
+                                <img src="./assets/images/icons/SF-Favicon.png" alt="">
+                                Costing
+                            </li>
+                            <li>
+                                <img src="./assets/images/icons/SF-Favicon.png" alt="">
+                                BEE & Skills Development
+                            </li>
+                            <li>
+                                <img src="./assets/images/icons/SF-Favicon.png" alt="">
+                                General / Employer Impact
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- FAQ Grid Questions -->
+                    <div class="col-sm-8 faq-grid-questions">
+
+                        <div class="faq-questions-list faq-active-questions">
+
+                            <button class="accordion"> Do we need to have a Bursary Policy in place? </button>
+                            <div class="panel">
+                                <p> Yes, according to the Tax Act, an employer needs to have the correct policy and
+                                    documentation in place in order to administer Section 10(1)(q) in a compliant
+                                    manner.
+                                </p>
+                            </div>
+
+                            <button class="accordion"> Does SmartFunder provide the necessary Bursary Documentation?
+                            </button>
+                            <div class="panel">
+                                <p> Yes, SmartFunder provides the employer with all the documents required in order to
+                                    administer the benefit in a compliant manner.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="faq-questions-list">
+
+                            <button class="accordion"> Does the employer need to make monthly payments to separate
+                                individual schools? </button>
+                            <div class="panel">
+                                <p> No, the employer only makes one bulk payment to SmartFunder. SmartFunder then takes
+                                    care of the allocation of these fees to the correct educational institutions.
+                                </p>
+                            </div>
+
+                            <button class="accordion"> Can you make payments to all schools in South Africa? </button>
+                            <div class="panel">
+                                <p> SmartFunder can make payments to all schools in South Africa, public and private, as
+                                    long as they are registered with the Department of Education. Thereby we ensure that
+                                    all fees are paid to registered and verified educational institutions.
+                                </p>
+                            </div>
+
+                            <button class="accordion"> What is required from the Employer on a monthly basis? </button>
+                            <div class="panel">
+                                <p> Every month, SmartFunder will provide the Employer with a payroll adjustment file,
+                                    on a date as specified by the Employer. This file pulls into the Employer’s payroll
+                                    software, in the exact same manner as a medical aid contribution file. The employer
+                                    only needs to import this file into their software and make one bulk payment for the
+                                    total fees amount to SmartFunder.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="faq-questions-list">
+
+                            <button class="accordion"> What is the cost of implementing SmartFunder at my company?
+                            </button>
+                            <div class="panel">
+                                <p> There is not cost! SmartFunder aims to provide this to employers at a budget neutral
+                                    level, thereby offering a fantastic benefit to employees, at no additional cost to
+                                    the employer.
+                                </p>
+                            </div>
+
+                            <button class="accordion"> This sounds too good to be true, how do you make any money?
+                            </button>
+                            <div class="panel">
+                                <p> SmartFunder charges an administration fee for each beneficiary for whom we process
+                                    payments. This is not a set fee, instead it is a sliding scale, based on an
+                                    employee’s CTC. An employer has the choice to either pay this admin fee on behalf of
+                                    the employee, or to have the employee pay the admin fee.
+                                </p>
+                            </div>
+
+                            <button class="accordion"> I own a small company. Can we still make use of the benefit?
+                            </button>
+                            <div class="panel">
+                                <p> Certainly, we do not have a minimum required size in order to offer the benefit.
+                                    However, we do require a minimum total monthly admin fee of R3000 per employer. If
+                                    the total admin fees of all employees are less than R3000, an employer will only be
+                                    liable for the shortfall.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="faq-questions-list">
+
+                            <button class="accordion"> Will this affect my company’s skills development levy?</button>
+                            <div class="panel">
+                                <p> Yes, fees processed through SmartFunder decreases an employer’s Total Leviable Amount. An employer’s Skills Development Levy and Skills Development Target are linked to their leviable amount. A decrease in Total Leviable Amount would therefore have a direct impact on an employer’s levy and target.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="faq-questions-list">
+
+                                <button class="accordion"> Why am I only learning about this now?</button>
+                                <div class="panel">
+                                    <p> Section 10(1)(q) has existed for a long time, however recent changes to the non-taxable limits and qualifying criteria have cast a spotlight on the potential benefits.
+                                    </p>
+                                </div>
+
+                                <button class="accordion"> Does this put an administrative burden on my staff?   </button>
+                                <div class="panel">
+                                    <p> Certainly not. We have designed our product from the ground up with both your HR department and Payroll department in mind. We take care of every single part of the administration, starting with employee education, employee registration process, the vetting around applications right through to the distribution of school fees. All that is left for you as employer to do is a simple payroll adjustment and a single third-party payment.
+                                    </p>
+                                </div>
+
+                                <button class="accordion">  Who handles employee queries?</button>
+                                <div class="panel">
+                                    <p> We have a full-service support desk including digital support as well as a fully-fledged call center which employees can contact with queries.
+                                    </p>
+                                </div>
+
+                                <button class="accordion"> What happens if an employee resigns while using the benefit? </button>
+                                <div class="panel">
+                                    <p> SmartFunder is administered on a monthly basis, making it easy to reconcile the payments we make. If an employee is on the payroll file provided by SmartFunder, but is no longer employed at the company, no deduction will be made and subsequently no payment to the school for this specific employee. The individual would now be responsible for making the payments, as they did before they made use of SmartFunder.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                    </div>
+                </div> <!-- END Employers FAQ's -->
+
+
+
 
 
     </section>
@@ -161,7 +581,8 @@
     <section class="support-contact-section">
         <div class="row">
             <div class="col-md-6 support-contact-form">
-                <form method="post" name="myemailform" action="./assets/mail/form-to-email.php" class="contact-form" id="support-company-form">
+                <form method="post" name="myemailform" action="./assets/mail/form-to-email.php" class="contact-form"
+                    id="support-company-form">
                     <div>
                         <input type="text" name="name" placeholder="Company Name" required>
                     </div>
@@ -196,7 +617,8 @@
         </div>
 
         <!-- Contact Section Image & Footer Line -->
-        <img src="./assets/images/illustrations/Support/Contact-Form.png" class="support-contact-image" alt="Boy holding smartphone contacting smartfunder">
+        <img src="./assets/images/illustrations/Support/Contact-Form.png" class="support-contact-image"
+            alt="Boy holding smartphone contacting smartfunder">
         <div class="footer-seperation-line"></div>
     </section>
 

@@ -41,6 +41,7 @@ body {
     overflow-x: hidden;
     transition-timing-function: ease-out;
     background-color: white;
+    scroll-behavior: smooth;
 }
 
 
@@ -266,6 +267,103 @@ footer {
 
 /* --------------------------------------------------------- 
 
+3. HOME PAGE   
+
+------------------------------------------------- */
+
+
+/* Home Landing Section */
+
+.home-landing-section {
+    height: 80vh;
+}
+
+/* Home About Section */
+
+.home-about-section {
+    padding: 2% 10%;
+}
+
+.home-about-text {
+    color: var(--dark-grey);
+    font-weight: 300;
+    line-height: 1.4;
+    font-size: 1.1em;
+    text-align: center;
+    padding-bottom: 2.5%;
+}
+
+.home-about-video{
+    width: 60%;
+    display: block;
+    margin: auto;
+    border: 2px solid var(--light-blue);
+    padding-bottom: 2.5%;
+}
+
+.home-about-section .more-blue-button {
+    padding-top: 2%;
+}
+
+/* Home CLients Section */
+
+.home-clients-section {
+    padding: 2.5% 10%;
+    background-color: var(--light-grey);
+}
+
+/* Home Contact Section */
+
+.home-contact-section {
+    padding: 5% 10%;
+}
+.home-contact-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.home-contact-grid img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    transition: 0.5s;
+}
+
+.home-contact-grid img:hover {
+    transform: scale(1.05);
+}
+
+.home-contact-grid-text {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10%;
+}
+
+.home-contact-grid-text h4 {
+    font-size: 1.5em;
+}
+
+.home-contact-grid-text .blue-outline-button {
+    text-align: left;
+}
+
+.home-contact-grid-text .blue-outline-button  a {
+    padding: 4px 10%;
+}
+
+.home-contact-section .row > div {
+    padding: 0;
+}
+
+.home-contact-section .row > div:nth-child(1) .home-contact-grid {
+    border-right: 2px solid var(--light-grey);
+}
+
+
+/* --------------------------------------------------------- 
+
 4. ABOUT PAGE   
 
 ------------------------------------------------- */
@@ -288,9 +386,15 @@ footer {
 
 .about-story-image-container img,
 .careers-image-container img {
-    width: 70%;
+    width: 60%;
     display: block;
     margin: auto;
+    transition: 0.5s;
+}
+
+.about-story-image-container img:hover,
+.careers-image-container img:hover {
+    transform: scale(1.05);
 }
 
 .about-story-text-container,
@@ -309,8 +413,7 @@ footer {
 
 .about-services-section {
     background-color: var(--light-grey);
-    padding-bottom: 3%;
-
+    padding-bottom: 1%;
 }
 
 .service-grid {
@@ -325,9 +428,15 @@ footer {
     box-shadow: 8px 8px 8px rgba(25, 35, 54, 0.15);
     width: 27%;
     text-align: center;
-    margin: 0 2.5% 2.5% 2.5%;
+    margin: 0 2.5% 5% 2.5%;
     border-radius: 5px;
     background-color: white;
+    transition: 0.5s;
+    padding-top: 10px;
+}
+
+.service-block:hover {
+    transform: scale(1.05);
 }
 
 .service-name {
@@ -353,6 +462,10 @@ footer {
 
 .careers-grid .blue-outline-button {
     text-align: left;
+}
+
+.about-careers-section .section-heading {
+    padding-bottom: 0;
 }
 
 
@@ -394,8 +507,8 @@ footer {
 /* FAQ Section */
 
 .support-faq-section {
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .faq-grid {
@@ -514,10 +627,25 @@ footer {
     border-bottom: 1px solid rgba(153, 153, 153, 0.4);
     color: var(--dark-grey);
     font-weight: 300;
+    font-size: 1em;
 }
 
 .panel p {
     padding-left: 5%;
+}
+
+.faq-employers {
+    display: none;
+}
+
+.faq-questions-list {
+    display: none;
+    transition: 0.5s;
+}
+
+.faq-active-questions {
+    display: block;
+    transition: 0.5s;
 }
 
 
@@ -544,13 +672,27 @@ footer {
     width: 100%;
     border-radius: 5px;
     border: none;
-    background-color: rgba(73, 143, 205, 0.05);
+    background-color: var(--light-grey);
     padding: 8px 15px;
     letter-spacing: 1px;
     margin: 10px 0;
     resize: none;
     font-size: 0.9em;
+    outline: none;
+    border: 2px solid white;
+    font-weight: 600;
 }
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 2px solid var(--light-blue);
+    border-radius: 5px;
+    background-color: white;
+}
+
+
+
+
 
 .submit-button {
     background-color: var(--light-blue) !important;
@@ -592,7 +734,7 @@ footer {
 .support-contact-details p:nth-child(2) {
     padding: 5% 0;
     padding-right: 30%;
-  
+
 }
 
 .support-contact-details a {
@@ -628,7 +770,7 @@ footer {
     bottom: 0;
     z-index: 2;
     right: 50px;
-    width:15vw
+    width: 15vw
 }
 
 .footer-seperation-line {
