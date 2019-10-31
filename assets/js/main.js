@@ -1,11 +1,13 @@
 /* ---------------------------------------------------------
 TABLE OF CONTENTS
 
-    1. Page Specific
-    1.1. Client Page
+    1. General
+    2. Page Specific
+    2.1. Client Page
+    2.2 Support Page
+    2.3 Home Page
     
 ---------------------------------------- */
-
 
 
 /* ---------------------------------------------
@@ -15,7 +17,15 @@ TABLE OF CONTENTS
     ----------------------------------- */
 
 
-/*  1.1. Client Page */
+
+/* ---------------------------------------------
+    
+2. PAGE SPECIFIC 
+    
+    ----------------------------------- */
+
+
+/*  2.1. Client Page */
 
 // Load Extra Clients Grid
 
@@ -24,11 +34,9 @@ const loadExtraClients = () => {
     $(".extra-client-grid").fadeIn(1000)
 }
 
-
-
 // --------------
 
-/*  1.1. Support Page */
+/*  2.2. Support Page */
 
 
 // Change FAQ Active Tab
@@ -89,13 +97,37 @@ $(".faq-grid-categories li").click(function () {
     $(`.faq-grid-questions div:nth-child(${listIndex})`).fadeIn(500);
 });
 
+// --------------
+
+/*  2.3. Home Page */
 
 
+// Activate Carousel & Vimeo Play
+
+if ($("body").hasClass("home-body")) {
+
+    // Owl Carousel
+    const owl = $('.owl-carousel');
+    $(document).ready(function () {
+        owl.owlCarousel({
+            items: 5,
+            loop: true,
+            margin: 50,
+            autoplayHoverPause: true
+        });
+    });
+
+    setInterval(() => {
+        owl.trigger('next.owl.carousel');
+    }, 2500);
 
 
-// ------------------------------
-// Home Page
+    // Vimeo
+    var iframe = document.querySelector('iframe');
+    var player = new Vimeo.Player(iframe);
 
+    $(".home-landing-video-link a").click(()=> {
+        player.play();
+    })
 
-// Activate Carousel
-$("#myCarousel").carousel({interval: 4000, pause: "hover"});
+}

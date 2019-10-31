@@ -195,19 +195,24 @@ nav {
 .login-link {
     background-color: var(--light-blue);
     border-radius: 5px;
-    padding: 0;
+    padding: 3px 0;
 }
 
 .login-link a {
     color: white !important;
     font-weight: 600;
     opacity: 1;
-    padding: 0 15px;
+    padding: 3px 15px;
 }
 
 .login-link:hover {
     background-color: var(--dark-blue);
     transition: 0.5s;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
 }
 
 
@@ -275,7 +280,33 @@ footer {
 /* Home Landing Section */
 
 .home-landing-section {
-    height: 80vh;
+    /* height: 80vh; */
+    padding: 7.5% 10% 2.5% 10%;
+    position: relative;
+}
+
+.home-landing-image {
+    width: 80%;
+}
+
+.home-landing-section h1 {
+    color: var(--dark-blue);
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+
+.home-landing-video-link {
+    margin:0 !important;
+    float: right;
+}
+
+.home-landing-video-link a {
+    padding: 6px 15px;
+}
+
+.home-landing-video-link a i {
+    margin-left: 5px;
+    font-size: 0.9em;
 }
 
 /* Home About Section */
@@ -291,19 +322,20 @@ footer {
     font-size: 1.1em;
     text-align: center;
     padding-bottom: 2.5%;
+    padding: 0 10% 2.5% 10%;
 }
 
-.home-about-video{
-    width: 60%;
+.home-about-video iframe {
     display: block;
     margin: auto;
-    border: 2px solid var(--light-blue);
-    padding-bottom: 2.5%;
 }
 
 .home-about-section .more-blue-button {
     padding-top: 2%;
 }
+
+
+
 
 /* Home CLients Section */
 
@@ -312,11 +344,25 @@ footer {
     background-color: var(--light-grey);
 }
 
+.home-carousel {
+    transition-timing-function: ease-in;
+}
+
+.carousel-image {
+    display: block;
+    margin: auto;
+}
+
+.carousel-image {
+    width: 80%;
+}
+
 /* Home Contact Section */
 
 .home-contact-section {
     padding: 5% 10%;
 }
+
 .home-contact-grid {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -349,15 +395,15 @@ footer {
     text-align: left;
 }
 
-.home-contact-grid-text .blue-outline-button  a {
+.home-contact-grid-text .blue-outline-button a {
     padding: 4px 10%;
 }
 
-.home-contact-section .row > div {
+.home-contact-section .row>div {
     padding: 0;
 }
 
-.home-contact-section .row > div:nth-child(1) .home-contact-grid {
+.home-contact-section .row>div:nth-child(1) .home-contact-grid {
     border-right: 2px solid var(--light-grey);
 }
 
@@ -667,6 +713,39 @@ footer {
     margin: auto;
 }
 
+.contact-form label:nth-child(1) {
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.contact-form-radio-group {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 5%;
+    align-items: center;
+    letter-spacing: 0.5px;
+}
+
+.contact-form-radio-group {
+    font-weight: 600;
+    color: var(--dark-grey);
+    font-size: 1.1em;
+}
+
+/* BS4 Custom Radio checked state */
+/* .custom-radio .custom-control-input:checked~.custom-control-label::before,
+.custom-radio .custom-control-input:checked~.custom-control-label::after {
+    background-color: var(--light-blue); 
+    border-radius: 50%;
+} */
+
+.custom-control-input:checked~.custom-control-label::before {
+    border-color: var(--light-blue);
+    background-color: var(--light-blue);
+}
+
+
+
 .contact-form input,
 .contact-form textarea {
     width: 100%;
@@ -675,7 +754,7 @@ footer {
     background-color: var(--light-grey);
     padding: 8px 15px;
     letter-spacing: 1px;
-    margin: 10px 0;
+    margin: 5px 0;
     resize: none;
     font-size: 0.9em;
     outline: none;
@@ -689,10 +768,6 @@ footer {
     border-radius: 5px;
     background-color: white;
 }
-
-
-
-
 
 .submit-button {
     background-color: var(--light-blue) !important;
@@ -794,7 +869,7 @@ footer {
 /* Landing Section */
 
 .client-landing-section img {
-    width: 80%;
+    width: 60%;
     display: block;
     margin: auto;
 }

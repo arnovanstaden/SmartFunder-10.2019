@@ -16,6 +16,20 @@ TABLE OF CONTENTS
 
 
 /* ---------------------------------------------------------
+    2. General Styles */    
+
+
+    @media screen and (min-width:1500px) {
+
+        html, body {
+            font-size: 18px;
+        }
+
+    }
+
+
+
+/* ---------------------------------------------------------
     6. Client Page STYLES */
 
     @media screen and (max-width:576px) {
