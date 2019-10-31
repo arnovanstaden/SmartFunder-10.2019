@@ -240,7 +240,7 @@ nav {
 }
 
 .mobile-nav {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.95);
     position: fixed !important;
     top: 0;
     right: 0;
@@ -251,7 +251,7 @@ nav {
     overflow-x: hidden;
 }
 
-.mobile-nav-content a{
+.mobile-nav-content a {
     color: var(--dark-blue);
     font-weight: 600;
     font-size: 1.5em;
@@ -290,7 +290,7 @@ nav {
     align-items: center;
 }
 
-.mobile-nav i:hover{
+.mobile-nav i:hover {
     color: var(--light-blue);
     transform: rotate(180deg);
 }
@@ -432,6 +432,7 @@ footer {
 
 .home-landing-contact form {
     width: 90%;
+    border: 3px solid transparent;
 }
 
 /* Home About Section */
@@ -541,6 +542,47 @@ footer {
     border-right: 2px solid var(--light-grey);
 }
 
+/* Sign Up Animation */
+
+.home-landing-contact-form-animation {
+    animation-name: contact-form-animation ;
+    animation-duration: 1.5s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+
+@keyframes contact-form-animation {
+    0% {
+        border: 3px solid transparent;
+    }
+
+    50% {
+        border: 3px solid var(--light-blue);
+    }
+
+    100% {
+        border: 3px solid transparent;
+    }
+}
+
+@-webkit-keyframes contact-form-animation {
+    0% {
+        border: 3px solid transparent;
+    }
+
+    50% {
+        border: 3px solid var(--light-blue);
+    }
+
+    100% {
+        border: 3px solid transparent;
+    }
+}
 
 /* --------------------------------------------------------- 
 
@@ -1057,7 +1099,7 @@ footer {
     padding-top: 100px;
 }
 
-.thank-you-section > div {
+.thank-you-section>div {
     display: flex;
     justify-content: center;
     align-items: center;
