@@ -187,11 +187,11 @@ if ($("body").hasClass("home-body")) {
     // Autoplay Video on scroll
     var videoOffset = $(".home-about-video").offset();
 
-    // $(".home-body").scroll(()=> {
-    //     if ($(".home-body").scrollTop() >= (videoOffset.top-$(iframe).height() *2.2)) {
-    //         player.play()
-    //     }
-    // });
+    $(".home-body").scroll(()=> {
+        if ($(".home-body").scrollTop() >= (videoOffset.top-$(iframe).height() *2.2)) {
+            player.play()
+        }
+    });
 }
 
 // Contact Form "Sign-Up" Animation
