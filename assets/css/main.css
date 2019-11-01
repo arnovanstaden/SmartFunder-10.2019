@@ -475,12 +475,14 @@ footer {
 }
 
 .home-carousel {
-    transition-timing-function: ease-in;
+    padding: 20px 0;
+    transition-timing-function: ease-in-out;
 }
 
-.carousel-image {
+.owl-carousel .owl-item img {
     display: block;
     margin: auto;
+    /* width: 75%; */
 }
 
 .carousel-image {
@@ -546,7 +548,7 @@ footer {
 
 .home-landing-contact-form-animation {
     animation-name: contact-form-animation ;
-    animation-duration: 1.5s;
+    animation-duration: 1.5fs;
     animation-iteration-count: 3;
     animation-timing-function: ease-in-out;
 }
@@ -826,6 +828,7 @@ footer {
     color: var(--dark-blue) !important;
     cursor: pointer;
     padding: 18px;
+    padding-right: 0;
     width: 100%;
     text-align: left;
     border: none;
@@ -869,6 +872,23 @@ footer {
 .faq-active-questions {
     display: block;
     transition: 0.5s;
+}
+
+.faq-panel-image {
+    display: block;
+    margin:0 auto;
+}
+
+#faq-image-1 {
+    width: 50%;
+}
+
+#faq-image-2 {
+    width: 90%;
+}
+
+#faq-image-3 {
+    width: 90%;
 }
 
 
@@ -1073,7 +1093,7 @@ footer {
 
 .client-grid img {
     width: 100%;
-    padding: 10px 0;
+    padding: 20px 0;
     vertical-align: middle;
     transition: 0.5s;
 }

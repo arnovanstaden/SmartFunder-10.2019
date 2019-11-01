@@ -66,27 +66,27 @@
             </ul>
         </div>
 
-         <!-- Mobile Navigation -->
+        <!-- Mobile Navigation -->
 
-         <div class="mobile-nav-icon" onclick="openMobileNav()">
-                <i class="fal fa-bars"></i>
+        <div class="mobile-nav-icon" onclick="openMobileNav()">
+            <i class="fal fa-bars"></i>
+        </div>
+
+        <div class="mobile-nav">
+
+            <div>
+                <i class="far fa-times" onclick="closeMobileNav()"></i>
             </div>
-    
-            <div class="mobile-nav">
-                    
-                <div>
-                    <i class="far fa-times" onclick="closeMobileNav()"></i>
-                </div>
-                <img class="mobile-nav-logo" src="./assets/images/logos/SmartFunder-Logo-Blue.png"
-                    alt="SmartFunder Navbar Logo">
-                <div class="mobile-nav-content">
-                    <a href="./index.html">Home</a>
-                    <a href="./about.html">About</a>
-                    <a href="./clients.html">Clients</a>
-                    <a href="./support.html">Support</a>
-                    <a href="??" class="mobile-nav-login">Login</a>
-                </div>
+            <img class="mobile-nav-logo" src="./assets/images/logos/SmartFunder-Logo-Blue.png"
+                alt="SmartFunder Navbar Logo">
+            <div class="mobile-nav-content">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./clients.html">Clients</a>
+                <a href="./support.html">Support</a>
+                <a href="??" class="mobile-nav-login">Login</a>
             </div>
+        </div>
     </nav>
 
 
@@ -124,17 +124,13 @@
             </div>
 
             <!-- Employees FAQ's -->
-            <div class="faq-container faq-employees" >
+            <div class="faq-container faq-employees">
                 <div class="row">
 
                     <!-- FAQ Grid Questions -->
                     <div class="col-sm-4 faq-grid-categories">
                         <ul>
                             <li class="faq-active-category">
-                                <img src="./assets/images/icons/SF-Favicon.png" alt="SmartFunder Logo">
-                                Test
-                            </li>
-                            <li>
                                 <img src="./assets/images/icons/SF-Favicon.png" alt="SmartFunder Logo">
                                 Benefit Amounts & Payments
                             </li>
@@ -196,7 +192,8 @@
                                 <p>The graph below indicates all qualifying relatives that fall within the 3rd degree of
                                     consanguinity:
                                 </p>
-                                <img src="./assets/images/faq-images/faq1.png" alt="" class="faq-panel-image">
+                                <img src="./assets/images/faq-images/1.png" alt="" class="faq-panel-image"
+                                    id="faq-image-1">
                             </div>
 
                             <button class="accordion">Can I pay for my own studies?</button>
@@ -273,8 +270,9 @@
                                     platform. Alternatively, you can choose to only utilise the non-taxable portion of
                                     R20 000 and personally settle the remaining balance of R6 000 (scenario 2). The tax
                                     saving will be the same in both scenarios:
-
                                 </p>
+                                <img src="./assets/images/faq-images/2.png" alt="" class="faq-panel-image"
+                                    id="faq-image-2">
                             </div>
 
                         </div>
@@ -386,14 +384,8 @@
                                     • Type of account <br>
                                     • Branch <br>
 
-
-
                                 </p>
                             </div>
-
-                        </div>
-
-                        <div class="faq-questions-list">
 
                             <button class="accordion"> Will this impact my salary and disposable income? </button>
                             <div class="panel">
@@ -431,6 +423,8 @@
                                     assuming you make use of the full benefit per child and have no other tax-deductible
                                     expenses. These numbers are based on the March 2019 to February 2020 tax year.
                                 </p>
+                                <img src="./assets/images/faq-images/3.png" alt="" class="faq-panel-image"
+                                    id="faq-image-3">
                             </div>
 
                         </div>
@@ -692,7 +686,8 @@
                 <a
                     href="mailto:info@smartfunder.co.za?subject=Hi%20SmartFunder!%20I%20need%20some%20help.">info@smartfunder.co.za</a>
                 <div>
-                    <a href="https://za.linkedin.com/company/smartfunder" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://za.linkedin.com/company/smartfunder" target="blank"><i
+                            class="fab fa-linkedin-in"></i></a>
                 </div>
 
             </div>
@@ -708,12 +703,12 @@
     <!-- Footer -->
     <footer class="container-fluid">
         <div class="footer-nav">
-                <a href="./about.html">About</a>
-                <a href="./about.html#careers">Careers</a>
-                <a href="./support.html">Support</a>
-                <a href="./support.html#faq">FAQ</a>
-                <a href="./terms.html">Terms</a>
-                <a href="./privacy.html">Privacy</a>
+            <a href="./about.html">About</a>
+            <a href="./about.html#careers">Careers</a>
+            <a href="./support.html">Support</a>
+            <a href="./support.html#faq">FAQ</a>
+            <a href="./terms.html">Terms</a>
+            <a href="./privacy.html">Privacy</a>
         </div>
         <img class="footer-logo" src="./assets/images/logos/SmartFunder-Logo-Blue.png" alt="SmartFunder Footer Logo">
         <div class="footer-line"></div>
