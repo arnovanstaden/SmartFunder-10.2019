@@ -273,8 +273,8 @@ TABLE OF CONTENTS
     5. SUPPORT PAGE STYLES */
 
 @media screen and (max-width:991px) {
-    .support-contact-form form {
-        width: 80%;
+    .contact-form {
+        width: 90%;
     }
 }
 
@@ -307,7 +307,7 @@ TABLE OF CONTENTS
         display: none;
     }
 
-    .support-contact-form form {
+    .contact-form {
         width: 90%;
     }
 

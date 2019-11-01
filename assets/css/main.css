@@ -900,7 +900,7 @@ footer {
 
 /* Contact Section */
 .support-contact-section {
-    padding: 30px 5%;
+    padding: 60px 5%;
     background-color: var(--light-grey);
     position: relative;
 }
@@ -911,7 +911,7 @@ footer {
     text-align: center;
     border-radius: 10px;
     box-shadow: 8px 8px 8px rgba(25, 35, 54, 0.15);
-    width: 70%;
+    width: 75%;
     display: block;
     margin: auto;
 }
@@ -970,6 +970,7 @@ footer {
     width: 70% !important;
     margin: 0 !important;
     transition: 0.5s;
+    margin-top: 10px !important;
 }
 
 .submit-button:hover {

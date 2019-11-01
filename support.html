@@ -622,89 +622,93 @@
     </section>
 
     <section class="support-contact-section">
-        <div class="row">
-            <div class="col-md-6 order-last order-md-first support-contact-form">
-                <form method="post" name="myemailform" action="./assets/mail/form-to-email-employer.php" class="contact-form"
-                    id="support-employer-form">
-                    <label for="">Want to pay school fees the smart way?</label>
-                    <div class="contact-form-radio-group">
-                        <div class="custom-control custom-radio">
-                            <input type="radio" class="custom-control-input" id="employerRadio" name="radio" required
-                                checked>
-                            <label class="custom-control-label" for="employerRadio">Employer</label>
+            <div class="row">
+                <div class="col-md-6 order-last order-md-first">
+                    <div class="contact-form">
+                        <h2 for="">Want to pay school fees the smart way?</h2>
+                        <div class="contact-form-radio-group">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="employerRadio" name="radio" required
+                                    checked>
+                                <label class="custom-control-label" for="employerRadio">Employer</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="employeeRadio" name="radio" required>
+                                <label class="custom-control-label" for="employeeRadio">Employee</label>
+                                <div class="invalid-feedback">More example invalid feedback text</div>
+                            </div>
                         </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" class="custom-control-input" id="employeeRadio" name="radio" required>
-                            <label class="custom-control-label" for="employeeRadio">Employee</label>
-                            <div class="invalid-feedback">More example invalid feedback text</div>
-                        </div>
+                        <form method="post" name="myemailform" action="./assets/mail/form-to-email-employer.php"
+                            class="employer-form">
+                            <div>
+                                <input type="text" name="employerCompanyName" placeholder="Company Name" required>
+                            </div>
+                            <div>
+                                <input type="text" name="employerNumberOfEmployees" placeholder="Number Of Employees"
+                                    required>
+                            </div>
+                            <div>
+                                <input type="email" name="employerCompanyEmail"
+                                    placeholder="Company Representative Email Address" required>
+                            </div>
+                            <div>
+                                <input type="number" name="employerCompanyNumber"
+                                    placeholder="Company Representative Mobile Number" required>
+                            </div>
+                            <div>
+                                <textarea name="employerMessage" rows="3" placeholder="How can SmartFunder Help?"
+                                    required></textarea>
+                            </div>
+                            <input type="submit" name='submit' value="Send Message" class="submit-button">
+                        </form>
+                        <form method="post" name="myemailform" action="./assets/mail/form-to-email-employee.php"
+                            class="employee-form">
+                            <div>
+                                <input type="text" name="employeeNameSurname" placeholder="Name & Surname" required>
+                            </div>
+                            <div>
+                                <input type="number" name="employeeIDNumber" placeholder="ID Number" required>
+                            </div>
+                            <div>
+                                <input type="email" name="employeeEmail" placeholder="Email Address" required>
+                            </div>
+                            <div>
+                                <input type="number" name="employeeNumber" placeholder="Mobile Number" required>
+                            </div>
+                            <div>
+                                <input type="text" name="employeeCompany" placeholder="Company name" required>
+                            </div>
+                            <div>
+                                <textarea name="employeeMessage" rows="3" placeholder="How can SmartFunder Help?"
+                                    required></textarea>
+                            </div>
+    
+                            <input type="submit" name='submit' value="Send Message" class="submit-button">
+                        </form>
                     </div>
-                    <div class="employer-form">
-                        <div>
-                            <input type="text" name="employerCompanyName" placeholder="Company Name" required>
-                        </div>
-                        <div>
-                            <input type="text" name="employerNumberOfEmployees" placeholder="Number Of Employees" required>
-                        </div>
-                        <div>
-                            <input type="email" name="employerCompanyEmail" placeholder="Company Representative Email Address"
-                                required>
-                        </div>
-                        <div>
-                            <input type="number" name="employerCompanyNumber" placeholder="Company Representative Mobile Number"
-                                required>
-                        </div>
-                        <div>
-                            <textarea name="employerMessage" rows="3" placeholder="How can SmartFunder Help?"
-                                required></textarea>
-                        </div>
-                    </div>
-                    <div class="employee-form">
-                        <div>
-                            <input type="text" name="employeeNameSurname" placeholder="Name & Surname" required>
-                        </div>
-                        <div>
-                            <input type="number" name="employeeIDNumber" placeholder="ID Number" required>
-                        </div>
-                        <div>
-                            <input type="email" name="employeeEmail" placeholder="Email Address" required>
-                        </div>
-                        <div>
-                            <input type="number" name="employeeNumber" placeholder="Mobile Number" required>
-                        </div>
-                        <div>
-                            <input type="text" name="employeeCompany" placeholder="Company name" required>
-                        </div>
-                        <div>
-                            <textarea name="employeeMessage" rows="3" placeholder="How can SmartFunder Help?"
-                                required></textarea>
-                        </div>
-                    </div>
-                    <input type="submit" name='submit' value="Send Message" class="submit-button">
-                </form>
-            </div>
-            <div class="col-md-6 order-first order-md-last support-contact-details">
-                <h1>Want to get in touch?</h1>
-                <p>Give us a call, send an email, or fill in the contact
-                    form – we'll get back to you in a jiffy.</p>
-                <p>Call Us</p>
-                <a href="tel:+27 87 012 5325">+27 87 012 5325</a>
-                <p>Email Us</p>
-                <a
-                    href="mailto:info@smartfunder.co.za?subject=Hi%20SmartFunder!%20I%20need%20some%20help.">info@smartfunder.co.za</a>
-                <div>
-                    <a href="https://za.linkedin.com/company/smartfunder" target="blank"><i
-                            class="fab fa-linkedin-in"></i></a>
                 </div>
-
+                <div class="col-md-6 order-first order-md-last support-contact-details">
+                    <h1>Want to get in touch?</h1>
+                    <p>Give us a call, send an email, or fill in the contact
+                        form – we'll get back to you in a jiffy.</p>
+                    <p>Call Us</p>
+                    <a href="tel:+27 87 012 5325">+27 87 012 5325</a>
+                    <p>Email Us</p>
+                    <a
+                        href="mailto:info@smartfunder.co.za?subject=Hi%20SmartFunder!%20I%20need%20some%20help.">info@smartfunder.co.za</a>
+                    <div>
+                        <a href="https://za.linkedin.com/company/smartfunder" target="blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+    
+                </div>
             </div>
-        </div>
-
-        <!-- Contact Section Image & Footer Line -->
-        <img src="./assets/images/illustrations/Support/Contact-Form.png" class="support-contact-image"
-            alt="Boy holding smartphone contacting smartfunder">
-        <div class="footer-seperation-line"></div>
-    </section>
+    
+            <!-- Contact Section Image & Footer Line -->
+            <img src="./assets/images/illustrations/Support/Contact-Form.png" class="support-contact-image"
+                alt="Boy holding smartphone contacting smartfunder">
+            <div class="footer-seperation-line"></div>
+        </section>
 
 
     <!-- Footer -->
