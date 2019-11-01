@@ -43,7 +43,15 @@ const closeMobileNav = () => {
     $(".mobile-nav").css("width", "0vw");
 }
 
+// Validate ID number (employee form)
 
+function validateForm() {
+    var x =  document.forms["myemailform"]["employeeIDNumber"].value;
+    if (x.length !== 13) {
+        alert("Please check your ID number. It must be 13 characters");
+      return false;
+    }
+  }
 
 /* ---------------------------------------------
     

@@ -27,7 +27,7 @@ $email_from = 'info@webdacity.co.za';//<== update the email address
 $email_subject = "Employer - Website Contact Form Submission";
 $email_body = "You have received a new message form an employer:\n\n".
 
-    "Company Name:\n $employerCompanyName.\n\n".
+    "Company Name:\n $employerCompanyName\n\n".
     "Number Of Employees:\n $employerNumberOfEmployees \n\n".
     "Company Rep. Email:\n $employerCompanyEmail \n\n".
     "Company Rep. Number:\n $employerCompanyNumber \n\n".
