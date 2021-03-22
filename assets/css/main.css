@@ -185,9 +185,9 @@ nav {
 }
 
 .navbar-line {
-    height: 100%;
-    background-color: var(--dark-grey);
-    width: 2px;
+    height: 30px !important;
+    background-color: rgba(153, 153, 153, 0.5);
+    width: 1px !important;
     padding: 0;
     margin: 0 30px 0 10px;
     display: block;

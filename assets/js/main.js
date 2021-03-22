@@ -196,10 +196,10 @@ if ($("body").hasClass("home-body")) {
 // Contact Form "Sign-Up" Animation
 
     $('#home-sign-up-button').click(function(){
-       $('.home-landing-contact form').addClass('home-landing-contact-form-animation'); 
+       $('.home-landing-contact .contact-form').addClass('home-landing-contact-form-animation'); 
 
     //    Remove Again
        setTimeout(() => {
-        $('.home-landing-contact form').removeClass('home-landing-contact-form-animation'); 
+        $('.home-landing-contact .contact-form').removeClass('home-landing-contact-form-animation'); 
        }, 5000);
     });
